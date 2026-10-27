@@ -94,20 +94,20 @@ Source: [https://github.com/SpaceTimeArc/Systemarchitecture](https://github.com/
 
 - These data should be published in CNG (or 3DTiles for 3D) formats
 
-- And published via matadisco, so these datasets can be found form the client apps implementing our system.
+- And published via Matadisco, so these datasets can be found form the client apps implementing our system.
 
 
 ## Paleomaps
 
 - A framework to collect GIS datasets of past times to support archeological-environmental modelling.
 
-![Paleomaps are a GIS datasets of paleoenvironmental GIS layers.](figs/paleomaps.png){fig-align="center" width="80%"}
+![Source: Willmes (2016).](figs/paleomaps.png){fig-align="center" width="80%"}
 
 ## Plaeomaps: Data publication
 
 - The idea is to professionalise the dataset compilation and publication by submitting these datasets as data publications in peer-reviewd (data) journals.
 
-![Paleomaps are a GIS datasets of paleoenvironmental GIS layers.](figs/datapublication.png){fig-align="center" width="80%"}
+![Paleomaps dataset publication.](figs/datapublication.png){fig-align="center" width="80%"}
 
 ## Data: Cloud-Native Geospatial
 
@@ -133,12 +133,12 @@ Source: [guide.cloudnativegeo.org/images/cogeo-formats-table.png](https://guide.
 
 
 
-
 ## It's all about the data
 
-- Data infrastrucuture -> integration, access and discovery needs to be sorted/solved first
+- Data infrastrucuture -> integration, access and discovery needs to be sorted/solved first.
 
-- In times of AI vibecoded apps client apps are not the (main) problem anymore.
+- In times of AI vibecoded apps, client apps are not the (main) problem anymore.
+
 
 ## Comrades-In-Arms
 
@@ -150,6 +150,6 @@ Source: [guide.cloudnativegeo.org/images/cogeo-formats-table.png](https://guide.
 
 - We will hand in an abstract for the upcomming FOSSGIS Conference in March 2027 in Heidelberg.
 
-- Join or keep an eye on our github organization [https://github.com/orgs/SpaceTimeArc/](https://github.com/orgs/SpaceTimeArc/)
+- Join or keep an eye on our [github](https://github.com/orgs/SpaceTimeArc/) organization.
 
 
