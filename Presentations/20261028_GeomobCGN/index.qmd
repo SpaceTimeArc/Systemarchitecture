@@ -119,9 +119,10 @@ Source: [guide.cloudnativegeo.org/images/cogeo-formats-table.png](https://guide.
 
 ## Data: Semantic layer
 
-- Data integration based on Linked Open Data and formal data models / Ontologies
-- Florian Thiery FAIRIficationLOD
-- Perio.do - A gazetteer of periods for linking and visualizing data.
+- Data integration based on Linked Open Data and formal data models / ontologies / terminologies
+- CIDOC CRM based geo-lod ontology: GeoScience-FAIRification-LOD
+- Perio.do - A gazetteer of periods for linking and visualizing data
+- Wikidata
 - Spatio-temporal graph foundation models for earth system intelligence <https://link.springer.com/article/10.1007/s12145-026-02264-x>
 
 ## Data: Matadisco
