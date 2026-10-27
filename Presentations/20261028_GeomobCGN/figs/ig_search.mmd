@@ -1,0 +1,9 @@
+flowchart LR
+    Q1["Concept lookup<br/>search = 'integrated geography'"] --> C1["Concept C105592727<br/>(403 works)"]
+    C1 --> Q2["Concept corpus<br/>filter = concepts.id:C105592727"]
+    Q2 --> R2["276 retrievable works<br/>binned by decade"]
+    C1 --> Q3["Targeted searches<br/>coupled human--environment system,<br/>human--environment geography, GIS"]
+    Q3 --> Q4["DOI verification<br/>filter = doi:&lt;doi&gt;"]
+    Q4 --> R4["~25 key works verified:<br/>title, venue, authors, citations"]
+    R2 --> OUT["Systematic overview +<br/>literature review"]
+    R4 --> OUT

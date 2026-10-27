@@ -1,0 +1,12 @@
+flowchart TB
+    subgraph GEO["Geography"]
+        subgraph INTER["Integrated Geography (CHES research)"]
+            IG["Spatial analysis of human--environment<br/>interaction, change and resilience"]
+        end
+        HG["Human<br/>Geography"]
+        PG["Physical<br/>Geography"]
+        HG --- IG
+        PG --- IG
+    end
+    IG -. draws on .-> GIS["GIS / remote sensing /<br/>spatial modelling"]
+    IG --> GOAL["Sustainable development<br/>and environmental policy"]

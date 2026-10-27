@@ -1,0 +1,12 @@
+flowchart LR
+    HG["Human<br/>Geography"] --> S1["1. Conceptual and<br/>disciplinary integration"]
+    HG --> S2["2. CHES science<br/>(complexity, resilience)"]
+    HG --> S6["6. Applied,<br/>policy-oriented IG"]
+    PG["Physical<br/>Geography"] --> S3["3. Land change /<br/>land-system science"]
+    PG --> S5["5. Spatial modelling<br/>of coupled systems"]
+    HG --> S4["4. Geospatial methods<br/>(GIS, remote sensing)"]
+    PG --> S4
+    S5 --> S3
+    S4 --> S5
+    S2 --> S6
+    S3 --> S6
