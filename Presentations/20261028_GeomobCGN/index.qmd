@@ -62,7 +62,7 @@ Source: [https://github.com/SpaceTimeArc/Systemarchitecture](https://github.com/
 
 - Something like [AncientEarthGlobe](https://dinosaurpictures.org/ancient-earth#0) but also for future and much more data sources.
 
-- But the main product will not be geovisualization apps but integrated 4D landscapes, that can be the basis for spatiotemporal Human-Environment Interaction modellig applications.
+- But the main product will not be geovisualization apps but integrated 4D landscapes, that can be the basis for spatiotemporal Human-Environment Interaction modellig applications, and much more.
 
 - It will be a data infrastructure to facilitate Integrative Geography
 
@@ -70,7 +70,7 @@ Source: [https://github.com/SpaceTimeArc/Systemarchitecture](https://github.com/
 ## 3D Geo + Time = 4D Geo  
 
 
-![3D Model of Cologne as a roman City. Source: https://nachrichten.idw-online.de/2008/10/10/virtuell-in-3-d-durch-das-roemische-koeln-flanieren-koeln-war-schon-in-der-antike-eine-grossartige-stadt](figs/koelnrom.png){fig-align="center" width="80%"}
+![3D Model of CCAA. Source: https://nachrichten.idw-online.de/2008/10/10/virtuell-in-3-d-durch-das-roemische-koeln-flanieren-koeln-war-schon-in-der-antike-eine-grossartige-stadt](figs/koelnrom.png){fig-align="center" width="80%"}
 
 
 ## 3D Geo + Time = 4D Geo  
@@ -101,7 +101,7 @@ Source: [https://github.com/SpaceTimeArc/Systemarchitecture](https://github.com/
 
 - A framework to collect GIS datasets of past times to support archeological-environmental modelling.
 
-![Source: Willmes (2016).](figs/paleomaps.png){fig-align="center" width="80%"}
+![Source: [Willmes (2016)](https://www.researchgate.net/publication/317003697_PaleoMaps_SDI_for_open_paleoenvironmental_GIS_data).](figs/paleomaps.png){fig-align="center" width="80%"}
 
 ## Plaeomaps: Data publication
 
@@ -121,9 +121,9 @@ Source: [guide.cloudnativegeo.org/images/cogeo-formats-table.png](https://guide.
 
 - Data integration based on Linked Open Data and formal data models / ontologies / terminologies
 - CIDOC CRM based geo-lod ontology: GeoScience-FAIRification-LOD
-- Perio.do - A gazetteer of periods for linking and visualizing data
+- Temporal Data Model/Ontology like Perio.do 
 - Wikidata
-- Spatio-temporal graph foundation models for earth system intelligence <https://link.springer.com/article/10.1007/s12145-026-02264-x>
+- Completely reproducible by publishing the ELT code (Jupyter Notebooks)
 
 ## Data: Matadisco
 
@@ -132,12 +132,15 @@ Source: [guide.cloudnativegeo.org/images/cogeo-formats-table.png](https://guide.
 - [https://matadisco.org](https://matadisco.org)
 
 
-
 ## It's all about the data
 
 - Data infrastrucuture -> integration, access and discovery needs to be sorted/solved first.
 
 - In times of AI vibecoded apps, client apps are not the (main) problem anymore.
+
+- The is almost unlimited research potential for creating and compiling 4D landscape data sets.
+
+- We create a (scientific peer-reviewed) 4D model of the earth.
 
 
 ## Comrades-In-Arms
@@ -146,9 +149,9 @@ Source: [guide.cloudnativegeo.org/images/cogeo-formats-table.png](https://guide.
 
 - Get in contact with us if you want to join our effort.
 
-- We will give a Presentaion "Systemarchitecture for networked spatio-temporal human-environment-interaction data managemet" at CHNT31 in Vienna on 11.11. 
+- We will give a Presentaion "Systemarchitecture for networked spatio-temporal human-environment-interaction data managemet" at [CHNT31](https://drive.google.com/file/d/1H1OU9D-d07Jk49pENQjQ1SsiXRZ955ii/view) in Vienna on 11.11. 
 
-- We will hand in an abstract for the upcomming FOSSGIS Conference in March 2027 in Heidelberg.
+- We will hand in an abstract for the upcomming [FOSSGIS Conference in March 2027 in Heidelberg](https://fossgis-konferenz.de/2027/callforpapers/).
 
 - Join or keep an eye on our [github](https://github.com/orgs/SpaceTimeArc/) organization.
 
