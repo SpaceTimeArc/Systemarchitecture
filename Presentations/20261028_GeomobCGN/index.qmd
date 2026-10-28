@@ -138,7 +138,7 @@ Source: [guide.cloudnativegeo.org/images/cogeo-formats-table.png](https://guide.
 
 - In times of AI vibecoded apps, client apps are not the (main) problem anymore.
 
-- The is almost unlimited research potential for creating and compiling 4D landscape data sets.
+- There is almost unlimited research potential for creating and compiling 4D landscape data sets.
 
 - We create a (scientific peer-reviewed) 4D model of the earth.
 
