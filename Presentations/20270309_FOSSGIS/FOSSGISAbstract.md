@@ -1,4 +1,4 @@
-**SpaceTimeArc – Eine verteilte Dateninfrastruktur für raumzeitliche Mensch-Umwelt-Interaktion: Der Planet mit Zeitleiste**
+**SpaceTimeArc: Eine verteilte Dateninfrastruktur für raumzeitliche Mensch-Umwelt Daten**
 
 ## Abstract
 
