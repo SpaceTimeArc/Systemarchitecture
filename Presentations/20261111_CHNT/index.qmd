@@ -131,12 +131,7 @@ Source: [https://github.com/SpaceTimeArc/Systemarchitecture](https://github.com/
 ::: 
 
 
-
-
-
-
-
-## Data: Cloud-Native Geospatial
+## Cloud-Native Geospatial
 
 ![Cloud-native geospatial file formats: traditional vs. cloud-optimized formats.](figs/cogeo-formats-table.png){fig-align="center" width="80%"}
 
@@ -144,7 +139,7 @@ Source: [https://github.com/SpaceTimeArc/Systemarchitecture](https://github.com/
 Source: [guide.cloudnativegeo.org/images/cogeo-formats-table.png](https://guide.cloudnativegeo.org/images/cogeo-formats-table.png)
 :::
 
-## Data: Semantic layer
+## Semantic layer
 
 - Data integration based on Linked Open Data and formal data models / ontologies / terminologies
 - CIDOC CRM based geo-lod ontology: GeoScience-FAIRification-LOD
@@ -152,14 +147,16 @@ Source: [guide.cloudnativegeo.org/images/cogeo-formats-table.png](https://guide.
 - Wikidata
 - Completely reproducible by publishing the ELT code (Jupyter Notebooks)
 
-## Data: Matadisco
+## Matadisco
 
 - Distributed data publication and discovery
 - An open, decentralized network for data discovery. Publish metadata about any dataset to AT Protocol. Build community portals. Find what matters.
 - [https://matadisco.org](https://matadisco.org)
 
 
-## Conclusions: It's all about the data
+# Conclusions 
+
+## It's all about the data
 
 - Data infrastrucuture -> integration, access and discovery needs to be sorted/solved first.
 
