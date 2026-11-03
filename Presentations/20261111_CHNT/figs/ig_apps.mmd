@@ -1,0 +1,25 @@
+flowchart TB
+    subgraph SRC ["Data sources"]
+        RS2["Remote sensing<br/>(Landsat, Sentinel)"]
+        SENS["In-situ sensors,<br/>GIS layers"]
+        SOC["Census, social and<br/>economic data"]
+        HIST["Historical maps<br/>and records"]
+    end
+    subgraph MOD ["GIS / spatial modelling"]
+        LULCC["LULCC mapping<br/>and transition analysis"]
+        CA["Cellular-automata<br/>models (SLEUTH)"]
+        CM["Coupled scenario<br/>models (CLUE-S,<br/>land-surface models)"]
+        ABM["Agent-based<br/>CHES models"]
+        AI["GeoAI / big<br/>geospatial data"]
+    end
+    RS2 --> LULCC
+    SENS --> LULCC
+    SOC --> ABM
+    SOC --> CA
+    HIST --> CM
+    LULCC --> CA
+    CA --> OUT
+    CM --> OUT
+    ABM --> OUT
+    AI --> OUT
+    OUT["Outputs: vulnerability indices,<br/>risk maps, planning scenarios,<br/>early-warning signals"]
