@@ -6,14 +6,14 @@
 <script src="index_files/libs/quarto-html/tippy.umd.min.js"></script>
 <link href="index_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="index_files/libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.10.18">
+<link href="index_files/libs/quarto-html/quarto-syntax-highlighting-63b5708e65d6cd79cd7618c58d0c21e7.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.11.9">
 
-  <meta name="author" content="Christian Willmes, Florian Thiery, Volker Mische">
+  <meta name="author" content="Dr.&nbsp;Christian Willmes, Florian Thiery M.Sc., Dipl.-Ing. Volker Mische">
   <title>SpaceTimeArc</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="index_files/libs/revealjs/dist/reveal.css">
   <style>
@@ -54,7 +54,8 @@
     div.csl-indent {
       margin-left: 2em;
     }  </style>
-  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-2740581606dc327e82f18f789b69d8a0.css">
+  <link rel="stylesheet" href="index_files/libs/revealjs/dist/theme/quarto-00ad5a49dff614330cd349bcec985ec3.css">
+  <link rel="stylesheet" href="custom.css">
   <link href="index_files/libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="index_files/libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -154,21 +155,21 @@
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
+<section id="title-slide" data-background-color="#1f1f1d" class="quarto-title-block center">
   <h1 class="title">SpaceTimeArc</h1>
   <p class="subtitle">Systemarchitecture for networked spatio-temporal human-environment-interaction data managemet</p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Christian Willmes, Florian Thiery, Volker Mische
+Dr.&nbsp;Christian Willmes, Florian Thiery M.Sc., Dipl.-Ing. Volker Mische
 </div>
 </div>
 </div>
 
 </section>
 <section>
-<section id="introduction" class="title-slide slide level1 center">
+<section id="introduction" class="title-slide slide level1 center" data-background-color="#9a3412">
 <h1>Introduction</h1>
 
 </section>
@@ -197,7 +198,7 @@ Christian Willmes, Florian Thiery, Volker Mische
 
 <img data-src="figs/uniciv.png" style="width:80.0%" class="r-stretch quarto-figure-center"><p class="caption">Examples of published archaeological 3D Sites in 3D Tiles format. Source: https://cesium.com/blog/2024/08/19/cesium-research-uniciv/.</p></section></section>
 <section>
-<section id="data-basis" class="title-slide slide level1 center">
+<section id="data-basis" class="title-slide slide level1 center" data-background-color="#9a3412">
 <h1>Data basis</h1>
 
 </section>
@@ -246,11 +247,22 @@ Christian Willmes, Florian Thiery, Volker Mische
 <section id="human-layer-archeological-data" class="slide level2">
 <h2>Human Layer / Archeological Data</h2>
 <ul>
-<li>To Do…</li>
+<li>Archaeological findspots are a data layer of their own, linked to the environmental record in the same space and time</li>
+<li>Example: one volcanic eruption leaves a tephra layer that ties archaeological sites, cores and their chronologies together</li>
 </ul>
+</section>
+<section id="archaeological-sites-with-campanian-ignimbrite-tephra" class="slide level2 figure">
+<h2>Archaeological sites with Campanian Ignimbrite tephra</h2>
+<img data-src="figs/05-ci-map.png" class="r-stretch" alt="Map of archaeological sites with Campanian Ignimbrite tephra, up to 2,234 km from the source">
+<div class="figcap">
+<p>Tephra of the Campanian Ignimbrite eruption was found at archaeological sites up to 2,234 km from its source in the Phlegraean Fields.</p>
+<div class="src">
+<p>Data: geo-lod CI findspots; coastline Natural Earth | Figure: Florian Thiery, CC BY 4.0</p>
+</div>
+</div>
 </section></section>
 <section>
-<section id="technology" class="title-slide slide level1 center">
+<section id="technology" class="title-slide slide level1 center" data-background-color="#9a3412">
 <h1>Technology</h1>
 
 </section>
@@ -264,6 +276,7 @@ Christian Willmes, Florian Thiery, Volker Mische
 <div>
 <p></p><figure class=""><p></p>
 <div>
+
 <pre class="mermaid mermaid-js">---
 config:
   layout: elk
@@ -303,42 +316,100 @@ graph TD
 </div>
 </div>
 </div>
-
-<aside><div>
-<p>Source: <a href="https://github.com/SpaceTimeArc/Systemarchitecture">https://github.com/SpaceTimeArc/Systemarchitecture</a></p>
-</div></aside></section>
-<section id="data-cloud-native-geospatial" class="slide level2">
-<h2>Data: Cloud-Native Geospatial</h2>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="figs/cogeo-formats-table.png" style="width:80.0%"></p>
-<figcaption>Cloud-native geospatial file formats: traditional vs.&nbsp;cloud-optimized formats.</figcaption>
-</figure>
-</div>
-
-<aside><div>
+</section>
+<section id="cloud-native-geospatial" class="slide level2 figure">
+<h2>Cloud-Native Geospatial</h2>
+<img data-src="figs/cogeo-formats-table.png" class="r-stretch" alt="Table of cloud-native geospatial file formats: traditional versus cloud-optimized formats for vector, point cloud and raster data">
+<div class="figcap">
+<p>Cloud-native geospatial file formats: traditional vs.&nbsp;cloud-optimized formats.</p>
+<div class="src">
 <p>Source: <a href="https://guide.cloudnativegeo.org/images/cogeo-formats-table.png">guide.cloudnativegeo.org/images/cogeo-formats-table.png</a></p>
-</div></aside></section>
-<section id="data-semantic-layer" class="slide level2">
-<h2>Data: Semantic layer</h2>
+</div>
+</div>
+</section>
+<section id="semantic-layer" class="slide level2">
+<h2>Semantic layer</h2>
 <ul>
-<li>Data integration based on Linked Open Data and formal data models / ontologies / terminologies</li>
-<li>CIDOC CRM based geo-lod ontology: GeoScience-FAIRification-LOD</li>
-<li>Temporal Data Model/Ontology like Perio.do</li>
-<li>Wikidata</li>
-<li>Completely reproducible by publishing the ELT code (Jupyter Notebooks)</li>
+<li>Data integration through Linked Open Data: every dataset row becomes statements in a graph</li>
+<li>CIDOC CRM and its extensions as shared backbone, with domain modules on top</li>
+<li>Time: periods referenced through <a href="https://perio.do">PeriodO</a>, modelled ages kept with their source</li>
+<li>Identity: places, sites, people and events linked to Wikidata</li>
+<li>Reproducible: ELT notebooks (Jupyter) published together with the data</li>
 </ul>
 </section>
-<section id="data-matadisco" class="slide level2">
-<h2>Data: Matadisco</h2>
+<section id="the-semantic-layer-from-data-to-discovery" class="slide level2 figure">
+<h2>The semantic layer from data to discovery</h2>
+<img data-src="figs/13-semantic-layer.png" class="r-stretch" alt="Four columns: published data, ELT notebooks, a CRM-based graph with PeriodO and Wikidata, and discovery through Matadisco">
+<div class="figcap">
+<p>Published data are transformed by open ELT notebooks into a CRM-based graph, linked to PeriodO for periods and Wikidata for places and events, and found through Matadisco.</p>
+<div class="src">
+<p>Figure: Florian Thiery, CC BY 4.0</p>
+</div>
+</div>
+</section>
+<section id="demonstrator-geo-lod" class="slide level2">
+<h2>Demonstrator: geo-lod</h2>
+<ul>
+<li><a href="https://github.com/Research-Squirrel-Engineers/GeoScience-FAIRification-LOD">GeoScience-FAIRification-LOD</a> shows how the semantic modelling will look across the project</li>
+<li>A first selection of datasets: EPICA Dome C ice core, SISAL stalagmites, Campanian Ignimbrite findspots</li>
+<li>More datasets and modules will follow</li>
+</ul>
+</section>
+<section id="one-crm-family-three-modules" class="slide level2 figure">
+<h2>One CRM family, three modules</h2>
+<img data-src="figs/12-modules-and-crm.png" class="r-stretch" alt="The geolod, strat and an modules and how they connect to CIDOC CRM, CRMsci, CRMarchaeo and CRMgeo">
+<div class="figcap">
+<p>In geo-lod the geolod, strat and an modules are anchored in CIDOC CRM and its extensions CRMsci, CRMarchaeo and CRMgeo.</p>
+<div class="src">
+<p>Data: ontology modules of geo-lod | Figure: Florian Thiery, CC BY 4.0</p>
+</div>
+</div>
+</section>
+<section id="example-one-table-row-becomes-statements-in-cidoc-crm" class="slide level2 figure">
+<h2>Example: one table row becomes statements in CIDOC CRM</h2>
+<img data-src="figs/01-from-measurement-to-crm.png" class="r-stretch" alt="One methane measurement from the EPICA Dome C ice core as an observation, an ice core, a property and a place in CIDOC CRM">
+<div class="figcap">
+<p>A single CH4 value from the EPICA Dome C ice core is stated as an observation of an ice core, a property and a place.</p>
+<div class="src">
+<p>Data: Spahni &amp; Stocker 2006, doi:10.1594/PANGAEA.472484 | Figure: Florian Thiery, CC BY 4.0</p>
+</div>
+</div>
+</section>
+<section id="example-one-stalagmite-three-kinds-of-statements" class="slide level2 figure">
+<h2>Example: one stalagmite, three kinds of statements</h2>
+<img data-src="figs/04-measured-dated-interpreted.png" class="r-stretch" alt="Stalagmite LSF13_2018 with an isotope value, a U/Th date and a growth hiatus, each anchored in CIDOC CRM">
+<div class="figcap">
+<p>For stalagmite LSF13_2018 an isotope value, a U/Th date and a growth hiatus are kept apart as measured, dated and interpreted statements.</p>
+<div class="src">
+<p>Data: SISAL v3; stalagmite outline schematic | Figure: Florian Thiery, CC BY 4.0</p>
+</div>
+</div>
+</section>
+<section id="example-the-graph-says-where-the-measurement-says-what" class="slide level2 figure">
+<h2>Example: the graph says where, the measurement says what</h2>
+<img data-src="figs/06-ci-model.png" class="r-stretch" alt="Campanian Ignimbrite findspots in the West Eifel maars and the planned model of the tephra measurements">
+<div class="figcap">
+<p>Findspot positions are in the graph today; the tephra measurements from the West Eifel maar cores are planned (dashed).</p>
+<div class="src">
+<p>Data: Schenk et al.&nbsp;2024, Quaternary 7, 17 | Figure: Florian Thiery, CC BY 4.0</p>
+</div>
+</div>
+</section>
+<section id="matadisco" class="slide level2">
+<h2>Matadisco</h2>
 <ul>
 <li>Distributed data publication and discovery</li>
 <li>An open, decentralized network for data discovery. Publish metadata about any dataset to AT Protocol. Build community portals. Find what matters.</li>
 <li><a href="https://matadisco.org">https://matadisco.org</a></li>
 </ul>
+</section></section>
+<section>
+<section id="conclusions" class="title-slide slide level1 center" data-background-color="#9a3412">
+<h1>Conclusions</h1>
+
 </section>
-<section id="conclusions-its-all-about-the-data" class="slide level2">
-<h2>Conclusions: It’s all about the data</h2>
+<section id="its-all-about-the-data" class="slide level2">
+<h2>It’s all about the data</h2>
 <ul>
 <li><p>Data infrastrucuture -&gt; integration, access and discovery needs to be sorted/solved first.</p></li>
 <li><p>In times of AI vibecoded apps, client apps are not the (main) problem anymore.</p></li>
@@ -359,12 +430,20 @@ Willmes, Christian. 2022. <em><span>PaleoMaps</span> – <span>Creating</span>, 
 Willmes, Christian, Daniel Becker, Jan Verheul, et al. 2017. <span>“<span>PaleoMaps</span>: <span>SDI</span> for Open Paleoenvironmental <span>GIS</span> Data.”</span> <em>International Journal of Spatial Data Infrastructures Research</em> 12 (0): 39–61. <a href="https://doi.org/10.2902/ijsdir.v11i0.431">https://doi.org/10.2902/ijsdir.v11i0.431</a>.
 </div>
 </div>
+</section>
+<section id="figure-credits" class="slide level2 smaller">
+<h2>Figure credits</h2>
+<ul>
+<li>Semantic layer and archaeology figures: <a href="https://github.com/Research-Squirrel-Engineers/GeoScience-FAIRification-LOD">GeoScience-FAIRification-LOD</a>, figures CC BY 4.0, Florian Thiery</li>
+<li>EPICA Dome C data: Spahni &amp; Stocker 2006, doi:10.1594/PANGAEA.472484</li>
+<li>Campanian Ignimbrite findspots: geo-lod CI findspots; model after Schenk et al.&nbsp;2024, Quaternary 7, 17; coastline Natural Earth</li>
+</ul>
 
 </section></section>
     </div>
   <div class="quarto-auto-generated-content" style="display: none;">
 <div class="footer footer-default">
-<p>CHNT 31, November, 11 - 13 2026 | Vienna, Austria</p>
+<p>CHNT31, 11th November 2026 | Vienna, Austria</p>
 </div>
 </div></div>
 
@@ -396,7 +475,7 @@ Willmes, Christian, Daniel Becker, Jan Verheul, et al. 2017. <span>“<span>Pale
 'autoAnimateDuration': 1,
 'autoAnimateUnmatched': true,
 'jumpToSlide': true,
-'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"\u003ci class=\"fas fa-gear\">\u003c/i>","content":"\u003cul class=\"slide-menu-items\">\n\u003cli class=\"slide-tool-item active\" data-item=\"0\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\">\u003ckbd>f\u003c/kbd> Fullscreen\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"1\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\">\u003ckbd>s\u003c/kbd> Speaker View\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"2\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\">\u003ckbd>o\u003c/kbd> Slide Overview\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"3\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\">\u003ckbd>e\u003c/kbd> PDF Export Mode\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"4\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\">\u003ckbd>r\u003c/kbd> Scroll View Mode\u003c/a>\u003c/li>\n\u003cli class=\"slide-tool-item\" data-item=\"5\">\u003ca href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\">\u003ckbd>?\u003c/kbd> Keyboard Help\u003c/a>\u003c/li>\n\u003c/ul>"}],"openButton":true,"openButtonLabel":"Slide menu"},
 'smaller': false,
  
         // Display controls in the bottom right corner
@@ -542,12 +621,12 @@ Willmes, Christian, Daniel Becker, Jan Verheul, et al. 2017. <span>“<span>Pale
         // The "normal" size of the presentation, aspect ratio will be preserved
         // when the presentation is scaled to fit different resolutions. Can be
         // specified using percentage units.
-        width: 1050,
+        width: 1280,
 
-        height: 700,
+        height: 720,
 
         // Factor of the display size that should remain empty around the content
-        margin: 0.1,
+        margin: 4.0e-2,
 
         math: {
           mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
@@ -651,7 +730,8 @@ Willmes, Christian, Daniel Becker, Jan Verheul, et al. 2017. <span>“<span>Pale
               return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
           }
           // Inspect non-navigation links and adorn them if external
-         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          window.quartoDecorateExternalLinks = function (root) {
+         var links = (root || window.document).querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
           for (var i=0; i<links.length; i++) {
             const link = links[i];
             if (!isInternal(link.href)) {
@@ -660,8 +740,69 @@ Willmes, Christian, Daniel Becker, Jan Verheul, et al. 2017. <span>“<span>Pale
               if (link.dataset.originalHref !== undefined) {
                 link.href = link.dataset.originalHref;
               }
+              if (!link.classList.contains('no-external-icon')) {
+              }
             }
           }
+          };
+          window.quartoDecorateExternalLinks(window.document);
+        // Esc closes the popup (WCAG 1.4.13) and focus leaving both trigger and
+        // popup closes it (WCAG 2.4.11); tippy handles neither for interactive popups.
+        const hideOnEscAndFocusOut = {
+          name: 'hideOnEscAndFocusOut',
+          defaultValue: true,
+          fn(instance) {
+            const dismiss = () => {
+              // A show scheduled by the trigger delay would otherwise reopen it
+              instance.clearDelayTimeouts();
+              instance.hide();
+            };
+            const onKeyDown = (event) => {
+              if (event.key !== 'Escape') {
+                return;
+              }
+              // Keep Esc from also reaching page handlers (e.g. reveal.js overview),
+              // except an open reveal.js slide menu, which Esc should close too.
+              // The menu handles keys only when its keyboard option is on.
+              const menuHandlesEsc = window.Reveal?.getPlugin?.('menu')?.isOpen() &&
+                window.Reveal.getConfig().menu?.keyboard !== false;
+              if (!menuHandlesEsc) {
+                event.stopPropagation();
+              }
+              if (instance.popper.contains(window.document.activeElement)) {
+                // Disabled while refocusing so the focus trigger does not reopen it
+                instance.disable();
+                instance.reference.focus();
+                instance.enable();
+              }
+              dismiss();
+            };
+            const onFocusOut = (event) => {
+              const target = event.relatedTarget;
+              if (target && !instance.reference.contains(target) &&
+                  !instance.popper.contains(target)) {
+                dismiss();
+              }
+            };
+            // On the trigger too: a click trigger (code-annotations: select) has no
+            // blur handling. Attached for the instance's lifetime so leaving the
+            // trigger also cancels a show still pending on the trigger delay.
+            instance.reference.addEventListener('focusout', onFocusOut);
+            return {
+              onShow() {
+                window.document.addEventListener('keydown', onKeyDown, true);
+                instance.popper.addEventListener('focusout', onFocusOut);
+              },
+              onHide() {
+                window.document.removeEventListener('keydown', onKeyDown, true);
+                instance.popper.removeEventListener('focusout', onFocusOut);
+              },
+              onDestroy() {
+                instance.reference.removeEventListener('focusout', onFocusOut);
+              },
+            };
+          },
+        };
         function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
           const config = {
             allowHTML: true,
@@ -675,6 +816,7 @@ Willmes, Christian, Daniel Becker, Jan Verheul, et al. 2017. <span>“<span>Pale
             interactiveBorder: 10,
             theme: 'light-border',
             placement: 'bottom-start',
+            plugins: [hideOnEscAndFocusOut],
           };
           if (contentFn) {
             config.content = contentFn;

@@ -1,0 +1,109 @@
+/* custom.css - look of the SpaceTimeArc CHNT presentation.
+   Fira Sans (SIL OFL, fonts/LICENSE-FiraSans.txt), ink on white, one accent colour:
+   the same palette as the geo-lod figures. */
+
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("fonts/FiraSans-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: "Fira Sans";
+  font-weight: 500;
+  font-style: normal;
+  src: url("fonts/FiraSans-Medium.ttf") format("truetype");
+}
+
+:root {
+  --stp-ink: #1f1f1d;
+  --stp-muted: #55544f;
+  --stp-accent: #9a3412;
+}
+
+.reveal {
+  font-family: "Fira Sans", "Source Sans Pro", "Segoe UI", sans-serif;
+  color: var(--stp-ink);
+  font-size: 40px;
+}
+
+.reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+  font-family: "Fira Sans", "Source Sans Pro", "Segoe UI", sans-serif;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: 0;
+  color: var(--stp-ink);
+}
+
+/* content slides: title with an accent bar */
+.reveal .slides section h2 {
+  font-size: 1.45em;
+  border-left: 10px solid var(--stp-accent);
+  padding-left: 0.45em;
+  margin: 0 0 0.7em 0;
+  text-align: left;
+}
+
+.reveal .slides section ul { margin-top: 0.2em; }
+.reveal .slides section li { margin-bottom: 0.45em; line-height: 1.25; }
+.reveal a { color: var(--stp-accent); }
+
+/* section and title slides sit on a dark ground */
+.reveal .has-dark-background h1,
+.reveal .has-dark-background h2,
+.reveal .has-dark-background h3,
+.reveal .has-dark-background p,
+.reveal .has-dark-background .author,
+.reveal .has-dark-background .subtitle {
+  color: #ffffff;
+}
+.reveal .has-dark-background h2 { border-left: none; padding-left: 0; }
+
+/* figure slides: a short title, the figure, one sentence of context, one line of source */
+.reveal .slides section.figure h2 {
+  font-size: 1.05em;
+  margin-bottom: 0.3em;
+}
+.reveal .slides section.figure img.r-stretch {
+  display: block;
+  margin: 0 auto;
+  border: 0;
+  box-shadow: none;
+}
+.reveal .figcap {
+  font-size: 0.5em;
+  line-height: 1.3;
+  color: var(--stp-ink);
+  text-align: left;
+  margin: 0.4em 0 0 0;
+  padding-bottom: 1.7em; /* room for the slide's own footer line; padding, so that the figure height is computed without it */
+}
+
+/* footer and slide number: quiet */
+.reveal .footer, .reveal .slide-number {
+  font-family: "Fira Sans", "Source Sans Pro", sans-serif;
+  color: var(--stp-muted);
+}
+
+/* on dark slides the footer and the slide number turn light */
+.reveal.has-dark-background .footer,
+.reveal.has-dark-background .slide-number {
+  color: #e8e6df;
+}
+
+/* a slide's own footer carries the source line of a figure */
+.reveal .footer p { margin: 0; }
+
+/* older figure slides: Quarto writes the caption as p.caption below an r-stretch image */
+.reveal .slides section p.caption {
+  font-size: 0.5em;
+  line-height: 1.3;
+  text-align: left;
+  margin: 0.4em 0 0 0;
+  padding-bottom: 1.15em; /* room for the footer line */
+  overflow-wrap: anywhere;
+}
+
+/* second caption line: data and licence */
+.reveal .figcap .src { font-size: 0.85em; color: var(--stp-muted); margin-top: 0.15em; }
+.reveal .figcap p { margin: 0; }

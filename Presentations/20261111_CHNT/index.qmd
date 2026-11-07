@@ -1,15 +1,21 @@
 ---
 title: "SpaceTimeArc"
 subtitle: "Systemarchitecture for networked spatio-temporal human-environment-interaction data managemet"
-author: "Christian Willmes, Florian Thiery, Volker Mische"
-footer: "CHNT 31, November, 11 - 13 2026 | Vienna, Austria"
+author: "Dr. Christian Willmes, Florian Thiery M.Sc., Dipl.-Ing. Volker Mische"
+footer: "CHNT31, 11th November 2026 | Vienna, Austria"
 bibliography: references.bib
 format:
   revealjs:
     slide-number: "c/t"
+    width: 1280
+    height: 720
+    margin: 0.04
+    css: custom.css
+    title-slide-attributes:
+      data-background-color: "#1f1f1d"
 ---
 
-# Introduction 
+# Introduction {background-color="#9a3412"}
 
 ## The Vision
 
@@ -38,7 +44,7 @@ format:
 ![Examples of published archaeological 3D Sites in 3D Tiles format. Source: https://cesium.com/blog/2024/08/19/cesium-research-uniciv/.](figs/uniciv.png){fig-align="center" width="80%"}
 
 
-# Data basis
+# Data basis {background-color="#9a3412"}
 
 ## Data basis: Integrated 4D landscapes
 
@@ -82,9 +88,22 @@ format:
 
 ## Human Layer / Archeological Data
 
-- To Do...
+- Archaeological findspots are a data layer of their own, linked to the environmental record in the same space and time
+- Example: one volcanic eruption leaves a tephra layer that ties archaeological sites, cores and their chronologies together
 
-# Technology 
+## Archaeological sites with Campanian Ignimbrite tephra {.figure}
+
+![](figs/05-ci-map.png){.r-stretch fig-alt="Map of archaeological sites with Campanian Ignimbrite tephra, up to 2,234 km from the source"}
+
+::: {.figcap}
+Tephra of the Campanian Ignimbrite eruption was found at archaeological sites up to 2,234 km from its source in the Phlegraean Fields.
+
+::: {.src}
+Data: geo-lod CI findspots; coastline Natural Earth | Figure: Florian Thiery, CC BY 4.0
+:::
+:::
+
+# Technology {background-color="#9a3412"}
 
 ## Systemarchitecture Overveiw
 
@@ -125,27 +144,94 @@ graph TD
     class B1,B2,B3 component
     class C1,C2,C3 component
 ```
-
-::: {.aside}
-Source: [https://github.com/SpaceTimeArc/Systemarchitecture](https://github.com/SpaceTimeArc/Systemarchitecture)
-::: 
+ 
 
 
-## Cloud-Native Geospatial
+## Cloud-Native Geospatial {.figure}
 
-![Cloud-native geospatial file formats: traditional vs. cloud-optimized formats.](figs/cogeo-formats-table.png){fig-align="center" width="80%"}
+![](figs/cogeo-formats-table.png){.r-stretch fig-alt="Table of cloud-native geospatial file formats: traditional versus cloud-optimized formats for vector, point cloud and raster data"}
 
-::: {.aside}
+::: {.figcap}
+Cloud-native geospatial file formats: traditional vs. cloud-optimized formats.
+
+::: {.src}
 Source: [guide.cloudnativegeo.org/images/cogeo-formats-table.png](https://guide.cloudnativegeo.org/images/cogeo-formats-table.png)
+:::
 :::
 
 ## Semantic layer
 
-- Data integration based on Linked Open Data and formal data models / ontologies / terminologies
-- CIDOC CRM based geo-lod ontology: GeoScience-FAIRification-LOD
-- Temporal Data Model/Ontology like Perio.do 
-- Wikidata
-- Completely reproducible by publishing the ELT code (Jupyter Notebooks)
+- Data integration through Linked Open Data: every dataset row becomes statements in a graph
+- CIDOC CRM and its extensions as shared backbone, with domain modules on top
+- Time: periods referenced through [PeriodO](https://perio.do), modelled ages kept with their source
+- Identity: places, sites, people and events linked to Wikidata
+- Reproducible: ELT notebooks (Jupyter) published together with the data
+
+## The semantic layer from data to discovery {.figure}
+
+![](figs/13-semantic-layer.png){.r-stretch fig-alt="Four columns: published data, ELT notebooks, a CRM-based graph with PeriodO and Wikidata, and discovery through Matadisco"}
+
+::: {.figcap}
+Published data are transformed by open ELT notebooks into a CRM-based graph, linked to PeriodO for periods and Wikidata for places and events, and found through Matadisco.
+
+::: {.src}
+Figure: Florian Thiery, CC BY 4.0
+:::
+:::
+
+## Demonstrator: geo-lod
+
+- [GeoScience-FAIRification-LOD](https://github.com/Research-Squirrel-Engineers/GeoScience-FAIRification-LOD) shows how the semantic modelling will look across the project
+- A first selection of datasets: EPICA Dome C ice core, SISAL stalagmites, Campanian Ignimbrite findspots
+- More datasets and modules will follow
+
+## One CRM family, three modules {.figure}
+
+![](figs/12-modules-and-crm.png){.r-stretch fig-alt="The geolod, strat and an modules and how they connect to CIDOC CRM, CRMsci, CRMarchaeo and CRMgeo"}
+
+::: {.figcap}
+In geo-lod the geolod, strat and an modules are anchored in CIDOC CRM and its extensions CRMsci, CRMarchaeo and CRMgeo.
+
+::: {.src}
+Data: ontology modules of geo-lod | Figure: Florian Thiery, CC BY 4.0
+:::
+:::
+
+## Example: one table row becomes statements in CIDOC CRM {.figure}
+
+![](figs/01-from-measurement-to-crm.png){.r-stretch fig-alt="One methane measurement from the EPICA Dome C ice core as an observation, an ice core, a property and a place in CIDOC CRM"}
+
+::: {.figcap}
+A single CH4 value from the EPICA Dome C ice core is stated as an observation of an ice core, a property and a place.
+
+::: {.src}
+Data: Spahni & Stocker 2006, doi:10.1594/PANGAEA.472484 | Figure: Florian Thiery, CC BY 4.0
+:::
+:::
+
+## Example: one stalagmite, three kinds of statements {.figure}
+
+![](figs/04-measured-dated-interpreted.png){.r-stretch fig-alt="Stalagmite LSF13_2018 with an isotope value, a U/Th date and a growth hiatus, each anchored in CIDOC CRM"}
+
+::: {.figcap}
+For stalagmite LSF13_2018 an isotope value, a U/Th date and a growth hiatus are kept apart as measured, dated and interpreted statements.
+
+::: {.src}
+Data: SISAL v3; stalagmite outline schematic | Figure: Florian Thiery, CC BY 4.0
+:::
+:::
+
+## Example: the graph says where, the measurement says what {.figure}
+
+![](figs/06-ci-model.png){.r-stretch fig-alt="Campanian Ignimbrite findspots in the West Eifel maars and the planned model of the tephra measurements"}
+
+::: {.figcap}
+Findspot positions are in the graph today; the tephra measurements from the West Eifel maar cores are planned (dashed).
+
+::: {.src}
+Data: Schenk et al. 2024, Quaternary 7, 17 | Figure: Florian Thiery, CC BY 4.0
+:::
+:::
 
 ## Matadisco
 
@@ -154,7 +240,7 @@ Source: [guide.cloudnativegeo.org/images/cogeo-formats-table.png](https://guide.
 - [https://matadisco.org](https://matadisco.org)
 
 
-# Conclusions 
+# Conclusions {background-color="#9a3412"}
 
 ## It's all about the data
 
@@ -172,4 +258,10 @@ Source: [guide.cloudnativegeo.org/images/cogeo-formats-table.png](https://guide.
 
 ::: {#refs}
 :::
+
+## Figure credits {.smaller}
+
+- Semantic layer and archaeology figures: [GeoScience-FAIRification-LOD](https://github.com/Research-Squirrel-Engineers/GeoScience-FAIRification-LOD), figures CC BY 4.0, Florian Thiery
+- EPICA Dome C data: Spahni & Stocker 2006, doi:10.1594/PANGAEA.472484
+- Campanian Ignimbrite findspots: geo-lod CI findspots; model after Schenk et al. 2024, Quaternary 7, 17; coastline Natural Earth
 
