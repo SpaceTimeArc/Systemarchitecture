@@ -183,18 +183,6 @@ Figure: Florian Thiery, CC BY 4.0
 :::
 :::
 
-## Semantics: the geo-lod layer between CRM and W3C standards {.figure}
-
-![](figs/15-crm-family-simple.png){.r-stretch fig-alt="CIDOC CRM with CRMsci, CRMarchaeo and CRMgeo; three domain modules anchored in it; W3C standards reused below"}
-
-::: {.figcap}
-The geo-lod domain modules are anchored in the CIDOC CRM family and reuse W3C standards to build the knowledge graph.
-
-::: {.src}
-Figure: Florian Thiery, CC BY 4.0
-:::
-:::
-
 ## Linked: where the graph opens up {.figure}
 
 ![](figs/16-linked-graph.png){.r-stretch fig-alt="A stalagmite as a node in the graph, linked to the CIDOC CRM family, its cave, Wikidata and OpenStreetMap, dataset DOIs, ORCID, its source repository and, planned, PeriodO"}
@@ -286,5 +274,17 @@ Findspot positions are in the graph today; the tephra measurements from the West
 
 ::: {.src}
 Data: Schenk et al. 2024, Quaternary 7, 17 | Figure: Florian Thiery, CC BY 4.0
+:::
+:::
+
+## Semantics: the geo-lod layer between CRM and W3C standards {.figure}
+
+![](figs/15-crm-family-simple.png){.r-stretch fig-alt="CIDOC CRM with CRMsci, CRMarchaeo and CRMgeo; three domain modules anchored in it; W3C standards reused below"}
+
+::: {.figcap}
+The geo-lod domain modules are anchored in the CIDOC CRM family and reuse W3C standards to build the knowledge graph.
+
+::: {.src}
+Figure: Florian Thiery, CC BY 4.0
 :::
 :::
