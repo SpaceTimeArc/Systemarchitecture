@@ -327,71 +327,43 @@ graph TD
 </div>
 </div>
 </section>
-<section id="semantic-layer" class="slide level2">
-<h2>Semantic layer</h2>
-<ul>
-<li>Data integration through Linked Open Data: every dataset row becomes statements in a graph</li>
-<li>CIDOC CRM and its extensions as shared backbone, with domain modules on top</li>
-<li>Time: periods referenced through <a href="https://perio.do">PeriodO</a>, modelled ages kept with their source</li>
-<li>Identity: places, sites, people and events linked to Wikidata</li>
-<li>Reproducible: ELT notebooks (Jupyter) published together with the data</li>
-</ul>
-</section>
 <section id="the-semantic-layer-from-data-to-discovery" class="slide level2 figure">
 <h2>The semantic layer from data to discovery</h2>
 <img data-src="figs/13-semantic-layer.png" class="r-stretch" alt="Four columns: published data, ELT notebooks, a CRM-based graph with PeriodO and Wikidata, and discovery through Matadisco">
 <div class="figcap">
-<p>Published data are transformed by open ELT notebooks into a CRM-based graph, linked to PeriodO for periods and Wikidata for places and events, and found through Matadisco.</p>
+<p>Published data are transformed into a CRM-based graph, linked to PeriodO and Wikidata, and found through Matadisco.</p>
 <div class="src">
 <p>Figure: Florian Thiery, CC BY 4.0</p>
 </div>
 </div>
 </section>
-<section id="demonstrator-geo-lod" class="slide level2">
+<section id="demonstrator-geo-lod" class="slide level2 figure">
 <h2>Demonstrator: geo-lod</h2>
-<ul>
-<li><a href="https://github.com/Research-Squirrel-Engineers/GeoScience-FAIRification-LOD">GeoScience-FAIRification-LOD</a> shows how the semantic modelling will look across the project</li>
-<li>A first selection of datasets: EPICA Dome C ice core, SISAL stalagmites, Campanian Ignimbrite findspots</li>
-<li>More datasets and modules will follow</li>
-</ul>
-</section>
-<section id="one-crm-family-three-modules" class="slide level2 figure">
-<h2>One CRM family, three modules</h2>
-<img data-src="figs/12-modules-and-crm.png" class="r-stretch" alt="The geolod, strat and an modules and how they connect to CIDOC CRM, CRMsci, CRMarchaeo and CRMgeo">
+<img data-src="figs/14-geo-lod-workflow.png" class="r-stretch" alt="geo-lod workflow: EPICA, SISAL and Campanian Ignimbrite datasets, one Python pipeline, a graph anchored in the CIDOC CRM family, and publication as documentation, SPARQL page and downloads">
 <div class="figcap">
-<p>In geo-lod the geolod, strat and an modules are anchored in CIDOC CRM and its extensions CRMsci, CRMarchaeo and CRMgeo.</p>
+<p>The geo-lod Ontology shows the semantic modelling in practice as reproducible pipeline into a graph anchored in the CIDOC CRM family.</p>
 <div class="src">
-<p>Data: ontology modules of geo-lod | Figure: Florian Thiery, CC BY 4.0</p>
+<p>Figure: Florian Thiery, CC BY 4.0</p>
 </div>
 </div>
 </section>
-<section id="example-one-table-row-becomes-statements-in-cidoc-crm" class="slide level2 figure">
-<h2>Example: one table row becomes statements in CIDOC CRM</h2>
-<img data-src="figs/01-from-measurement-to-crm.png" class="r-stretch" alt="One methane measurement from the EPICA Dome C ice core as an observation, an ice core, a property and a place in CIDOC CRM">
+<section id="semantics-the-geo-lod-layer-between-crm-and-w3c-standards" class="slide level2 figure">
+<h2>Semantics: the geo-lod layer between CRM and W3C standards</h2>
+<img data-src="figs/15-crm-family-simple.png" class="r-stretch" alt="CIDOC CRM with CRMsci, CRMarchaeo and CRMgeo; three domain modules anchored in it; W3C standards reused below">
 <div class="figcap">
-<p>A single CH4 value from the EPICA Dome C ice core is stated as an observation of an ice core, a property and a place.</p>
+<p>The geo-lod domain modules are anchored in the CIDOC CRM family and reuse W3C standards to build the knowledge graph.</p>
 <div class="src">
-<p>Data: Spahni &amp; Stocker 2006, doi:10.1594/PANGAEA.472484 | Figure: Florian Thiery, CC BY 4.0</p>
+<p>Figure: Florian Thiery, CC BY 4.0</p>
 </div>
 </div>
 </section>
-<section id="example-one-stalagmite-three-kinds-of-statements" class="slide level2 figure">
-<h2>Example: one stalagmite, three kinds of statements</h2>
-<img data-src="figs/04-measured-dated-interpreted.png" class="r-stretch" alt="Stalagmite LSF13_2018 with an isotope value, a U/Th date and a growth hiatus, each anchored in CIDOC CRM">
+<section id="linked-where-the-graph-opens-up" class="slide level2 figure">
+<h2>Linked: where the graph opens up</h2>
+<img data-src="figs/16-linked-graph.png" class="r-stretch" alt="A stalagmite as a node in the graph, linked to the CIDOC CRM family, its cave, Wikidata and OpenStreetMap, dataset DOIs, ORCID, its source repository and, planned, PeriodO">
 <div class="figcap">
-<p>For stalagmite LSF13_2018 an isotope value, a U/Th date and a growth hiatus are kept apart as measured, dated and interpreted statements.</p>
+<p>A Stalagmite within the Federated Knowledge Graph Ecosystem to enable LINKED Open Data.</p>
 <div class="src">
-<p>Data: SISAL v3; stalagmite outline schematic | Figure: Florian Thiery, CC BY 4.0</p>
-</div>
-</div>
-</section>
-<section id="example-the-graph-says-where-the-measurement-says-what" class="slide level2 figure">
-<h2>Example: the graph says where, the measurement says what</h2>
-<img data-src="figs/06-ci-model.png" class="r-stretch" alt="Campanian Ignimbrite findspots in the West Eifel maars and the planned model of the tephra measurements">
-<div class="figcap">
-<p>Findspot positions are in the graph today; the tephra measurements from the West Eifel maar cores are planned (dashed).</p>
-<div class="src">
-<p>Data: Schenk et al.&nbsp;2024, Quaternary 7, 17 | Figure: Florian Thiery, CC BY 4.0</p>
+<p>Figure: Florian Thiery, CC BY 4.0</p>
 </div>
 </div>
 </section>
@@ -438,6 +410,51 @@ Willmes, Christian, Daniel Becker, Jan Verheul, et al. 2017. <span>“<span>Pale
 <li>EPICA Dome C data: Spahni &amp; Stocker 2006, doi:10.1594/PANGAEA.472484</li>
 <li>Campanian Ignimbrite findspots: geo-lod CI findspots; model after Schenk et al.&nbsp;2024, Quaternary 7, 17; coastline Natural Earth</li>
 </ul>
+</section></section>
+<section>
+<section id="backup" class="title-slide slide level1 center" data-background-color="#9a3412">
+<h1>Backup</h1>
+
+</section>
+<section id="backup-one-crm-family-three-modules" class="slide level2 figure">
+<h2>Backup: one CRM family, three modules</h2>
+<img data-src="figs/12-modules-and-crm.png" class="r-stretch" alt="The geolod, strat and an modules and how they connect to CIDOC CRM, CRMsci, CRMarchaeo and CRMgeo">
+<div class="figcap">
+<p>In geo-lod the geolod, strat and an modules are anchored in CIDOC CRM and its extensions CRMsci, CRMarchaeo and CRMgeo.</p>
+<div class="src">
+<p>Data: ontology modules of geo-lod | Figure: Florian Thiery, CC BY 4.0</p>
+</div>
+</div>
+</section>
+<section id="backup-one-table-row-becomes-statements-in-cidoc-crm" class="slide level2 figure">
+<h2>Backup: one table row becomes statements in CIDOC CRM</h2>
+<img data-src="figs/01-from-measurement-to-crm.png" class="r-stretch" alt="One methane measurement from the EPICA Dome C ice core as an observation, an ice core, a property and a place in CIDOC CRM">
+<div class="figcap">
+<p>A single CH4 value from the EPICA Dome C ice core is stated as an observation of an ice core, a property and a place.</p>
+<div class="src">
+<p>Data: Spahni &amp; Stocker 2006, doi:10.1594/PANGAEA.472484 | Figure: Florian Thiery, CC BY 4.0</p>
+</div>
+</div>
+</section>
+<section id="backup-one-stalagmite-three-kinds-of-statements" class="slide level2 figure">
+<h2>Backup: one stalagmite, three kinds of statements</h2>
+<img data-src="figs/04-measured-dated-interpreted.png" class="r-stretch" alt="Stalagmite LSF13_2018 with an isotope value, a U/Th date and a growth hiatus, each anchored in CIDOC CRM">
+<div class="figcap">
+<p>For stalagmite LSF13_2018 an isotope value, a U/Th date and a growth hiatus are kept apart as measured, dated and interpreted statements.</p>
+<div class="src">
+<p>Data: SISAL v3; stalagmite outline schematic | Figure: Florian Thiery, CC BY 4.0</p>
+</div>
+</div>
+</section>
+<section id="backup-the-graph-says-where-the-measurement-says-what" class="slide level2 figure">
+<h2>Backup: the graph says where, the measurement says what</h2>
+<img data-src="figs/06-ci-model.png" class="r-stretch" alt="Campanian Ignimbrite findspots in the West Eifel maars and the planned model of the tephra measurements">
+<div class="figcap">
+<p>Findspot positions are in the graph today; the tephra measurements from the West Eifel maar cores are planned (dashed).</p>
+<div class="src">
+<p>Data: Schenk et al.&nbsp;2024, Quaternary 7, 17 | Figure: Florian Thiery, CC BY 4.0</p>
+</div>
+</div>
 
 </section></section>
     </div>

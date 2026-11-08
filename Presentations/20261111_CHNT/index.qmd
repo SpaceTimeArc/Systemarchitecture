@@ -159,77 +159,51 @@ Source: [guide.cloudnativegeo.org/images/cogeo-formats-table.png](https://guide.
 :::
 :::
 
-## Semantic layer
-
-- Data integration through Linked Open Data: every dataset row becomes statements in a graph
-- CIDOC CRM and its extensions as shared backbone, with domain modules on top
-- Time: periods referenced through [PeriodO](https://perio.do), modelled ages kept with their source
-- Identity: places, sites, people and events linked to Wikidata
-- Reproducible: ELT notebooks (Jupyter) published together with the data
-
 ## The semantic layer from data to discovery {.figure}
 
 ![](figs/13-semantic-layer.png){.r-stretch fig-alt="Four columns: published data, ELT notebooks, a CRM-based graph with PeriodO and Wikidata, and discovery through Matadisco"}
 
 ::: {.figcap}
-Published data are transformed by open ELT notebooks into a CRM-based graph, linked to PeriodO for periods and Wikidata for places and events, and found through Matadisco.
+Published data are transformed into a CRM-based graph, linked to PeriodO and Wikidata, and found through Matadisco.
 
 ::: {.src}
 Figure: Florian Thiery, CC BY 4.0
 :::
 :::
 
-## Demonstrator: geo-lod
+## Demonstrator: geo-lod {.figure}
 
-- [GeoScience-FAIRification-LOD](https://github.com/Research-Squirrel-Engineers/GeoScience-FAIRification-LOD) shows how the semantic modelling will look across the project
-- A first selection of datasets: EPICA Dome C ice core, SISAL stalagmites, Campanian Ignimbrite findspots
-- More datasets and modules will follow
-
-## One CRM family, three modules {.figure}
-
-![](figs/12-modules-and-crm.png){.r-stretch fig-alt="The geolod, strat and an modules and how they connect to CIDOC CRM, CRMsci, CRMarchaeo and CRMgeo"}
+![](figs/14-geo-lod-workflow.png){.r-stretch fig-alt="geo-lod workflow: EPICA, SISAL and Campanian Ignimbrite datasets, one Python pipeline, a graph anchored in the CIDOC CRM family, and publication as documentation, SPARQL page and downloads"}
 
 ::: {.figcap}
-In geo-lod the geolod, strat and an modules are anchored in CIDOC CRM and its extensions CRMsci, CRMarchaeo and CRMgeo.
+The geo-lod Ontology shows the semantic modelling in practice as reproducible pipeline into a graph anchored in the CIDOC CRM family.
 
 ::: {.src}
-Data: ontology modules of geo-lod | Figure: Florian Thiery, CC BY 4.0
+Figure: Florian Thiery, CC BY 4.0
 :::
 :::
 
-## Example: one table row becomes statements in CIDOC CRM {.figure}
+## Semantics: the geo-lod layer between CRM and W3C standards {.figure}
 
-![](figs/01-from-measurement-to-crm.png){.r-stretch fig-alt="One methane measurement from the EPICA Dome C ice core as an observation, an ice core, a property and a place in CIDOC CRM"}
+![](figs/15-crm-family-simple.png){.r-stretch fig-alt="CIDOC CRM with CRMsci, CRMarchaeo and CRMgeo; three domain modules anchored in it; W3C standards reused below"}
 
 ::: {.figcap}
-A single CH4 value from the EPICA Dome C ice core is stated as an observation of an ice core, a property and a place.
+The geo-lod domain modules are anchored in the CIDOC CRM family and reuse W3C standards to build the knowledge graph.
 
 ::: {.src}
-Data: Spahni & Stocker 2006, doi:10.1594/PANGAEA.472484 | Figure: Florian Thiery, CC BY 4.0
+Figure: Florian Thiery, CC BY 4.0
 :::
 :::
 
-## Example: one stalagmite, three kinds of statements {.figure}
+## Linked: where the graph opens up {.figure}
 
-![](figs/04-measured-dated-interpreted.png){.r-stretch fig-alt="Stalagmite LSF13_2018 with an isotope value, a U/Th date and a growth hiatus, each anchored in CIDOC CRM"}
+![](figs/16-linked-graph.png){.r-stretch fig-alt="A stalagmite as a node in the graph, linked to the CIDOC CRM family, its cave, Wikidata and OpenStreetMap, dataset DOIs, ORCID, its source repository and, planned, PeriodO"}
 
 ::: {.figcap}
-For stalagmite LSF13_2018 an isotope value, a U/Th date and a growth hiatus are kept apart as measured, dated and interpreted statements.
+A Stalagmite within the Federated Knowledge Graph Ecosystem to enable LINKED Open Data.
 
 ::: {.src}
-Data: SISAL v3; stalagmite outline schematic | Figure: Florian Thiery, CC BY 4.0
-:::
-:::
-
-## Example: the graph says where, the measurement says what {.figure}
-
-![](figs/06-ci-model.png){.r-stretch fig-alt="Campanian Ignimbrite findspots in the West Eifel maars and the planned model of the tephra measurements"}
-
-::: {.figcap}
-Findspot positions are in the graph today; the tephra measurements from the West Eifel maar cores are planned (dashed).
-
-::: {.src}
-Data: Schenk et al. 2024, Quaternary 7, 17 | Figure: Florian Thiery, CC BY 4.0
+Figure: Florian Thiery, CC BY 4.0
 :::
 :::
 
@@ -265,3 +239,52 @@ Data: Schenk et al. 2024, Quaternary 7, 17 | Figure: Florian Thiery, CC BY 4.0
 - EPICA Dome C data: Spahni & Stocker 2006, doi:10.1594/PANGAEA.472484
 - Campanian Ignimbrite findspots: geo-lod CI findspots; model after Schenk et al. 2024, Quaternary 7, 17; coastline Natural Earth
 
+# Backup {background-color="#9a3412"}
+
+## Backup: one CRM family, three modules {.figure}
+
+![](figs/12-modules-and-crm.png){.r-stretch fig-alt="The geolod, strat and an modules and how they connect to CIDOC CRM, CRMsci, CRMarchaeo and CRMgeo"}
+
+::: {.figcap}
+In geo-lod the geolod, strat and an modules are anchored in CIDOC CRM and its extensions CRMsci, CRMarchaeo and CRMgeo.
+
+::: {.src}
+Data: ontology modules of geo-lod | Figure: Florian Thiery, CC BY 4.0
+:::
+:::
+
+## Backup: one table row becomes statements in CIDOC CRM {.figure}
+
+![](figs/01-from-measurement-to-crm.png){.r-stretch fig-alt="One methane measurement from the EPICA Dome C ice core as an observation, an ice core, a property and a place in CIDOC CRM"}
+
+::: {.figcap}
+A single CH4 value from the EPICA Dome C ice core is stated as an observation of an ice core, a property and a place.
+
+::: {.src}
+Data: Spahni & Stocker 2006, doi:10.1594/PANGAEA.472484 | Figure: Florian Thiery, CC BY 4.0
+:::
+:::
+
+## Backup: one stalagmite, three kinds of statements {.figure}
+
+![](figs/04-measured-dated-interpreted.png){.r-stretch fig-alt="Stalagmite LSF13_2018 with an isotope value, a U/Th date and a growth hiatus, each anchored in CIDOC CRM"}
+
+::: {.figcap}
+For stalagmite LSF13_2018 an isotope value, a U/Th date and a growth hiatus are kept apart as measured, dated and interpreted statements.
+
+::: {.src}
+Data: SISAL v3; stalagmite outline schematic | Figure: Florian Thiery, CC BY 4.0
+:::
+:::
+
+## Backup: the graph says where, the measurement says what {.figure}
+
+![](figs/06-ci-model.png){.r-stretch fig-alt="Campanian Ignimbrite findspots in the West Eifel maars and the planned model of the tephra measurements"}
+
+::: {.figcap}
+Findspot positions are in the graph today; the tephra measurements from the West Eifel maar cores are planned (dashed).
+
+::: {.src}
+Data: Schenk et al. 2024, Quaternary 7, 17 | Figure: Florian Thiery, CC BY 4.0
+:::
+:::
