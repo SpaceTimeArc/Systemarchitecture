@@ -19,18 +19,18 @@ format:
 
 ## The Vision
 
-- A geobrowser that enables "time travel" across the Earth's surface — navigate, visualise and analyse landscapes as they were, are, and may become.
-- Also, a well defined data model and comprehensive data basis for building spatiotemporal applications.
+* A geobrowser that enables "time travel" across the Earth's surface — navigate, visualise and analyse landscapes as they were, are, and may become.
+* Also, a well defined data model and comprehensive data basis for building spatiotemporal applications.
 
 ## Virtual Globe + Timeslider
 
-- Interactive 3D globe that is not frozen in the present — a time axis you can scrub to explore the planet's past, present and future
+* Interactive 3D globe that is not frozen in the present — a time axis you can scrub to explore the planet's past, present and future
 
-- Something like [AncientEarthGlobe](https://dinosaurpictures.org/ancient-earth#0) but also for future and much more data sources.
+* Something like [AncientEarthGlobe](https://dinosaurpictures.org/ancient-earth#0) but also for future and much more data sources.
 
-- But the main product will not be geovisualization apps but integrated 4D landscapes, that can be the basis for spatiotemporal Human-Environment Interaction modellig applications, and much more.
+* But the main product will not be geovisualization apps but integrated 4D landscapes, that can be the basis for spatiotemporal Human-Environment Interaction modellig applications, and much more.
 
-- It will be a data infrastructure to facilitate Integrative Geography
+<!--* It will be a data infrastructure to facilitate Integrative Geography-->
 
 
 ## 3D Geo + Time = 4D Geo  
@@ -86,22 +86,24 @@ format:
 
 - All datasets should be linked to their sources or placed in context. Corresponding bibliographies should be “exportable” for each spatiotemporal data/layer configuration.
 
-## Human Layer / Archeological Data
+## Human Layer 
 
-- Archaeological findspots are a data layer of their own, linked to the environmental record in the same space and time
-- Example: one volcanic eruption leaves a tephra layer that ties archaeological sites, cores and their chronologies together
+* Similar to the 4D Landscapes, we aim to develop a consistent data model for the Human Layer
+* The Human Layer consists of:
+  + Sites (Locations / Points)
+    - Settlements, Industry (Mining, Fabrication, Camps), Monuments/Buildings (3D), ...
+  + Routes, Edges/Links (Lines)
+    - Streets, Railroad, Walls (fortification), ...
+  + Fields (Polygons)
+    -  LULC, Administrative Units (Catchments, Countries,...), ... 
 
-## Archaeological sites with Campanian Ignimbrite tephra {.figure}
 
-![](figs/05-ci-map.png){.r-stretch fig-alt="Map of archaeological sites with Campanian Ignimbrite tephra, up to 2,234 km from the source"}
+## Human Layer data set publications
 
-::: {.figcap}
-Tephra of the Campanian Ignimbrite eruption was found at archaeological sites up to 2,234 km from its source in the Phlegraean Fields.
+* The Human Layer datasets are compiled from peer reviewed publications.
+* The layers will be modelled in a well defined LOD data model. 
+* The compilation and creation of Human Layer datasets are publications of their own and will be peer reviewed and  published.
 
-::: {.src}
-Data: geo-lod CI findspots; coastline Natural Earth | Figure: Florian Thiery, CC BY 4.0
-:::
-:::
 
 # Technology {background-color="#9a3412"}
 
@@ -228,6 +230,23 @@ Figure: Florian Thiery, CC BY 4.0
 - Campanian Ignimbrite findspots: geo-lod CI findspots; model after Schenk et al. 2024, Quaternary 7, 17; coastline Natural Earth
 
 # Backup {background-color="#9a3412"}
+
+## Backup: Archaeological Data
+
+- Archaeological findspots are a data layer of their own, linked to the environmental record in the same space and time
+- Example: one volcanic eruption leaves a tephra layer that ties archaeological sites, cores and their chronologies together
+
+## Backup: Archaeological sites with Campanian Ignimbrite tephra {.figure}
+
+![](figs/05-ci-map.png){.r-stretch fig-alt="Map of archaeological sites with Campanian Ignimbrite tephra, up to 2,234 km from the source"}
+
+::: {.figcap}
+Tephra of the Campanian Ignimbrite eruption was found at archaeological sites up to 2,234 km from its source in the Phlegraean Fields.
+
+::: {.src}
+Data: geo-lod CI findspots; coastline Natural Earth | Figure: Florian Thiery, CC BY 4.0
+:::
+:::
 
 ## Backup: one CRM family, three modules {.figure}
 
