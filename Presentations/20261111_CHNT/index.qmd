@@ -1,7 +1,7 @@
 ---
 title: "SpaceTimeArc"
 subtitle: "Systemarchitecture for networked spatio-temporal human-environment-interaction data managemet"
-author: "Dr. Christian Willmes, Florian Thiery M.Sc., Dipl.-Ing. Volker Mische"
+author: "Dr. Christian Willmes, Florian Thiery M.Sc., Dipl.-Inf. Volker Mische"
 footer: "CHNT31, 11th November 2026 | Vienna, Austria"
 bibliography: references.bib
 format:
