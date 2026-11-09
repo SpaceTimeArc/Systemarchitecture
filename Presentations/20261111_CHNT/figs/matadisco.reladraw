@@ -1,0 +1,64 @@
+// Matadisco on ATProto: from existing metadata to live events.
+// Left to right: the record is made, written to one PDS over HTTP, picked up
+// by every relay over WebSockets, and streamed on to whoever is listening.
+// The PDS column is wide (many, decentralized), the relay column narrow
+// (few, centralized): the thin waist of the hourglass.
+
+diagram  title: "Matadisco: from metadata to live events over ATProto"  theme: light
+
+style  source      fill: theme-fill                         border: theme-border        shape: document
+style  pds         fill: theme-secondary-subtle             border: theme-secondary     badge: database
+style  relay       fill: theme-primary-subtle               border: theme-primary       line: theme-primary
+style  more        border: (color: theme-border)            text: (color: theme-muted)
+style  aside       text: (size: small, color: theme-muted)
+style  pds_word    text: (color: theme-secondary)
+style  relay_word  text: (color: theme-primary)
+
+// --- Producing the record --------------------------------------------------
+// The metadata stays where it is; the record is a small pointer to it, so the
+// metadata is drawn as a big store and the record as a small document under it.
+
+style  pointer  line: (color: theme-muted, pattern: dashed)  text: (color: theme-muted)
+
+node  metadata     "Existing metadata / [aside]stays where it is[/aside]"                                      shape: cylinder  width: 16
+node  record       "Matadisco record / [aside](JSON)[/aside]"                                                  style: source    below metadata (gap: 10)
+node  record_note  "A pointer to the / metadata, not a copy" (size: small, align: center, color: theme-muted)  shape: none      below record (gap: tight)
+
+edge  metadata -> record  "create" (left of edge)
+edge  record -> metadata  "points to" (right of edge)  style: pointer
+
+// --- The PDSs: the decentralized layer --------------------------------------
+
+node  pdses     "Personal Data / Servers (PDSs)" (inside top, align: left)  right of metadata and record (gap: 12)  layout: column (gap: 2, widths: match)
+node  pdses.p1  "PDS 1"                                                     style: pds
+node  pdses.p2  "PDS 2"                                                     style: pds
+node  pdses.p3  "PDS 3"                                                     style: pds
+node  pdses.pn  "PDS n …"                                                   style: more                             border: (color: theme-border)
+
+edge  record -> pdses.p3  "HTTP"  from: right  to: left
+
+node  pds_caption  "[pds_word]Decentralized[/pds_word] / anyone can run a PDS; / each holds its users' records" (size: small, align: center)  shape: none  below pdses (gap: tight)
+
+// --- The relays: the thin waist ---------------------------------------------
+
+node  relays     "Relays" (inside top, align: left)  right of pdses (gap: 16)  layout: column (gap: 3, widths: match)
+node  relays.r1  "Relay A"                           style: relay              height: 7
+node  relays.r2  "Relay B"                           style: relay              height: 7
+
+// Every relay subscribes to every PDS.
+edge  each child of pdses -> relays.r1  line: (color: theme-secondary)  from: right
+edge  each child of pdses -> relays.r2  line: (color: theme-secondary)  from: right
+
+guide point  mesh_mid  between pdses and relays
+node  ws_note  "WebSockets: every relay / subscribes to every PDS" (size: small, align: center)  shape: none  x even with mesh_mid  bottom even with pdses top
+
+node  relay_caption  "[relay_word]Thin waist (centralized)[/relay_word] / a few relays aggregate / the whole network" (size: small, align: center)  shape: none  below relays  top even with pds_caption
+
+// --- Consumers --------------------------------------------------------------
+
+node  consumers          "Consumers" (inside top, align: left)  right of relays (gap: 10)  layout: column (gap: 2, widths: match)
+node  consumers.clients  "Clients"
+node  consumers.users    "Users"
+node  consumers.portals  "Portals"
+
+edge  relays -> consumers  "live / events"  style: relay  from: right  to: left

@@ -199,11 +199,14 @@ Figure: Florian Thiery, CC BY 4.0
 :::
 :::
 
-## Matadisco
 
-- Distributed data publication and discovery
-- An open, decentralized network for data discovery. Publish metadata about any dataset to AT Protocol. Build community portals. Find what matters.
-- [https://matadisco.org](https://matadisco.org)
+## Matadisco  {.figure}
+
+![](figs/matadisco.svg){.r-stretch fig-alt="Diagram showing how Matadisco works"}
+
+::: {.figcap}
+[Matadisco](https://matadisco.org) is an open, decentralized network for data discovery based on [ATProto](https://atproto.com).
+:::
 
 
 # Conclusions {background-color="#9a3412"}
