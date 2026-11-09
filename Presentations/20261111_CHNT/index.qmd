@@ -86,9 +86,16 @@ format:
 
 - All datasets should be linked to their sources or placed in context. Corresponding bibliographies should be “exportable” for each spatiotemporal data/layer configuration.
 
+## Human Layer data set publications
+
+* Similar to the 4D Landscapes, we aim to develop a consistent data model for the Human Layer.
+* The Human Layer datasets are compiled from peer reviewed publications.
+* The layers will be modelled in a well defined LOD data model. 
+* The compilation and creation of Human Layer datasets are publications of their own and will be peer reviewed and  published.
+
+
 ## Human Layer 
 
-* Similar to the 4D Landscapes, we aim to develop a consistent data model for the Human Layer
 * The Human Layer consists of:
   + Sites (Locations / Points)
     - Settlements, Industry (Mining, Fabrication, Camps), Monuments/Buildings (3D), ...
@@ -97,12 +104,6 @@ format:
   + Fields (Polygons)
     -  LULC, Administrative Units (Catchments, Countries,...), ... 
 
-
-## Human Layer data set publications
-
-* The Human Layer datasets are compiled from peer reviewed publications.
-* The layers will be modelled in a well defined LOD data model. 
-* The compilation and creation of Human Layer datasets are publications of their own and will be peer reviewed and  published.
 
 
 # Technology {background-color="#9a3412"}
