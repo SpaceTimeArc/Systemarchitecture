@@ -208,6 +208,13 @@ Figure: Florian Thiery, CC BY 4.0
 [Matadisco](https://matadisco.org) is an open, decentralized network for data discovery based on [ATProto](https://atproto.com).
 :::
 
+::: {.notes}
+- The metadata can be of any shape, it could be JSON, XML or anything else
+- Matadisco records are JSON and at the bare minimum contain a link to the actual record
+  - Consumers of Matadisco records can then retrieve the actual record and post-processed it
+  - When creating the Matadisco record, you can extract information from the original metadata record and store it directly. Not every information should be extracted, but just the information that is most useful for e.g. filtering.
+:::
+
 
 # Conclusions {background-color="#9a3412"}
 
