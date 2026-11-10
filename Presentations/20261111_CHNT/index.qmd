@@ -23,7 +23,7 @@ format:
 * A geobrowser that enables "time travel" across the Earth's surface — navigate, visualise and analyse landscapes as they were, are, and may become.
 * Also, a well defined data model and comprehensive data basis for building spatiotemporal applications.
 
-## Virtual Globe + Timeslider
+## Virtual Globe with Timeslider
 
 * Interactive 3D virtual globe with "time slider" — a time axis you can interact to explore the planet's past, present and future
 
@@ -49,43 +49,43 @@ format:
 
 ## Data basis: Integrated 4D landscapes
 
-- What kind of Environmental and Cultural data are available for past, present and future?
+* What kind of Environmental and Cultural data are available for past, present and future?
 
-- We want to compile semantically well defined spatiotemporal data sets.
+* We want to compile semantically well defined spatiotemporal data sets.
 
-- Data gets integrated by space time context
+* Data gets integrated by space time context
 
   - Space is easy -> GIS Data formats (CNG)
   - Time is hard (heterogeneous concepts for naming time periods of the past) -> Ontology /data model -> mapped to ISO 8601 (Date and Time)
 
 ## 4DLandscape: Data publication
 
-- The 4D environmental and cultural datasets can and should be peer reviewed and published in proper venues like scientific journals, data journals and data repositories
+* The 4D environmental and cultural datasets can and should be peer reviewed and published in proper venues like scientific journals, data journals and data repositories
 
-- These data should be published in CNG (or 3DTiles for 3D) formats
+* These data should be published in CNG (or 3DTiles for 3D) formats
 
-- And published via Matadisco, so these datasets can be found form the client apps implementing our system.
+<!-- * And published via Matadisco, so these datasets can be found form the client apps implementing our system. -->
 
 
 ## 4DLandscape compilations 
 
-- Based on the original PaleoMaps idea (@Willmes2016, @willmes_paleomaps_2017, @willmes_paleomaps_2022) a framework to collect GIS datasets of past (and future) times to support archeological-environmental and future-scenario modelling will be developed.
+* Based on the original PaleoMaps idea (@Willmes2016, @willmes_paleomaps_2017, @willmes_paleomaps_2022) a framework to collect GIS datasets of past (and future) times to support archeological-environmental and future-scenario modelling will be developed.
 
 ![Source: @willmes_paleomaps_2017](figs/paleomaps.png){fig-align="center" width="80%"}
 
 ## 4DLandscapes: Data publication
 
-- The idea is to professionalise the dataset compilation and publication by submitting these datasets as data publications in peer-reviewd (data) journals.
+* The idea is to professionalise the dataset compilation and publication by submitting these datasets as data publications in peer-reviewd (data) journals.
 
 ![Paleomaps dataset publication. Source: @willmes_paleomaps_2017](figs/DatesetPubTemp.png){fig-align="center" width="80%"}
 
 ## 4DLandscapes: well defined Data model
 
-- For the SpaceTimeArc System and Application we aim to develop a common **stadardized data model** for spatio-temporal environmental and human (antropogenic infrastructure) data.
+* For the SpaceTimeArc System and Application we aim to develop a common **stadardized data model** for spatio-temporal environmental and human (antropogenic infrastructure) data.
 
-- The data model consists of **thematic layers** (as are commonly used in the GIS field), which are compiled from *scientific sources* for the time periods defined in the temporal model.
+* The data model consists of **thematic layers** (as are commonly used in the GIS field), which are compiled from *scientific sources* for the time periods defined in the temporal model.
 
-- **Data citation:** All data layers are linked to their sources. Corresponding bibliographies should be “exportable” for each spatiotemporal data/layer configuration.
+* **Data citation:** All data layers are linked to their sources. Corresponding bibliographies should be “exportable” for each spatiotemporal data/layer configuration.
 
 ## Human Layer
 
@@ -220,13 +220,13 @@ Figure: Florian Thiery, CC BY 4.0
 
 ## It's all about the data
 
-- Data infrastrucuture -> integration, access and discovery needs to be sorted/solved first.
+* Data infrastrucuture -> integration, access and discovery needs to be sorted/solved first.
 
-- In times of AI vibecoded apps, client apps are not the (main) problem anymore.
+* In times of AI vibecoded apps, client apps are not the (main) problem anymore.
 
-- There is almost unlimited research potential for creating and compiling 4D landscape data sets.
+* There is almost unlimited research potential for creating and compiling 4D landscape data sets.
 
-- We create a (scientific peer-reviewed) 4D model of the earth.
+* We create a (scientific peer-reviewed) 4D model of the earth.
 
 
 
@@ -237,16 +237,16 @@ Figure: Florian Thiery, CC BY 4.0
 
 ## Figure credits {.smaller}
 
-- Semantic layer and archaeology figures: [GeoScience-FAIRification-LOD](https://github.com/Research-Squirrel-Engineers/GeoScience-FAIRification-LOD), figures CC BY 4.0, Florian Thiery
-- EPICA Dome C data: Spahni & Stocker 2006, doi:10.1594/PANGAEA.472484
-- Campanian Ignimbrite findspots: geo-lod CI findspots; model after Schenk et al. 2024, Quaternary 7, 17; coastline Natural Earth
+* Semantic layer and archaeology figures: [GeoScience-FAIRification-LOD](https://github.com/Research-Squirrel-Engineers/GeoScience-FAIRification-LOD), figures CC BY 4.0, Florian Thiery
+* EPICA Dome C data: Spahni & Stocker 2006, doi:10.1594/PANGAEA.472484
+* Campanian Ignimbrite findspots: geo-lod CI findspots; model after Schenk et al. 2024, Quaternary 7, 17; coastline Natural Earth
 
 # Backup {background-color="#9a3412"}
 
 ## Backup: Archaeological Data
 
-- Archaeological findspots are a data layer of their own, linked to the environmental record in the same space and time
-- Example: one volcanic eruption leaves a tephra layer that ties archaeological sites, cores and their chronologies together
+* Archaeological findspots are a data layer of their own, linked to the environmental record in the same space and time
+* Example: one volcanic eruption leaves a tephra layer that ties archaeological sites, cores and their chronologies together
 
 ## Backup: Archaeological sites with Campanian Ignimbrite tephra {.figure}
 
