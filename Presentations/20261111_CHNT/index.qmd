@@ -25,11 +25,11 @@ format:
 
 ## Virtual Globe + Timeslider
 
-* Interactive 3D globe that is not frozen in the present — a time axis you can scrub to explore the planet's past, present and future
+* Interactive 3D virtual globe with "time slider" — a time axis you can interact to explore the planet's past, present and future
 
 * Something like [AncientEarthGlobe](https://dinosaurpictures.org/ancient-earth#0) but also for future and much more data sources.
 
-* But the main product will not be geovisualization apps but integrated 4D landscapes, that can be the basis for spatiotemporal Human-Environment Interaction modellig applications, and much more.
+* But the main product will not be geovisualization apps but **integrated 4D landscapes**, that can be the basis for spatiotemporal Human-Environment Interaction modellig applications, and much more.
 
 <!--* It will be a data infrastructure to facilitate Integrative Geography-->
 
@@ -56,7 +56,7 @@ format:
 - Data gets integrated by space time context
 
   - Space is easy -> GIS Data formats (CNG)
-  - Time is hard (heterogeneous concepts for naming time periods of the past) -> Ontology /data model
+  - Time is hard (heterogeneous concepts for naming time periods of the past) -> Ontology /data model -> mapped to ISO 8601 (Date and Time)
 
 ## 4DLandscape: Data publication
 
@@ -81,18 +81,18 @@ format:
 
 ## 4DLandscapes: well defined Data model
 
-- For the SpaceTimeArc System and Application we aim to develop a common "stadardized" data model for spatio-temporal environmental and human (antropogenic infrastructure) data.
+- For the SpaceTimeArc System and Application we aim to develop a common **stadardized data model** for spatio-temporal environmental and human (antropogenic infrastructure) data.
 
-- The data model consists of several thematic layers (as are commonly used in the GIS field), which are compiled from scientific sources for the time periods defined in the temporal model.
+- The data model consists of **thematic layers** (as are commonly used in the GIS field), which are compiled from *scientific sources* for the time periods defined in the temporal model.
 
-- All datasets should be linked to their sources or placed in context. Corresponding bibliographies should be “exportable” for each spatiotemporal data/layer configuration.
+- **Data citation:** All data layers are linked to their sources. Corresponding bibliographies should be “exportable” for each spatiotemporal data/layer configuration.
 
-## Human Layer data set publications
+## Human Layer
 
 * Similar to the 4D Landscapes, we aim to develop a consistent data model for the Human Layer.
 * The Human Layer datasets are compiled from peer reviewed publications.
 * The layers will be modelled in a well defined LOD data model. 
-* The compilation and creation of Human Layer datasets are publications of their own and will be peer reviewed and  published.
+* The compilation and creation of **Human Layer datasets are publications** of their own and will be peer reviewed and published.
 
 
 ## Human Layer 
@@ -102,8 +102,8 @@ format:
     - Settlements, Industry (Mining, Fabrication, Camps), Monuments/Buildings (3D), ...
   + Routes, Edges/Links (Lines)
     - Streets, Railroad, Walls (fortification), ...
-  + Fields (Polygons)
-    -  LULC, Administrative Units (Catchments, Countries,...), ... 
+  + Areas, Fields (Polygons)
+    -  LU/LC, Administrative Units (Catchments, Countries,...), ... 
 
 
 
