@@ -29,7 +29,7 @@ format:
 
 * Something like [AncientEarthGlobe](https://dinosaurpictures.org/ancient-earth#0) but also for future and much more data sources.
 
-* But the main product will not be geovisualization apps but **integrated 4D landscapes**, that can be the basis for spatiotemporal Human-Environment Interaction modellig applications, and much more.
+* But the main product will not be geovisualization apps but **integrated 4D landscapes**, that can be the basis for spatiotemporal **Human-Environment Interaction** modelling applications, and much more.
 
 <!--* It will be a data infrastructure to facilitate Integrative Geography-->
 
@@ -69,7 +69,7 @@ format:
 
 ## 4DLandscape compilations 
 
-* Based on the original PaleoMaps idea (@Willmes2016, @willmes_paleomaps_2017, @willmes_paleomaps_2022) a framework to collect GIS datasets of past (and future) times to support archeological-environmental and future-scenario modelling will be developed.
+* Based on the original PaleoMaps idea (@Willmes2016, @willmes_paleomaps_2017) a framework to collect GIS datasets of past (and future) times to support archeological-environmental and future-scenario modelling will be developed.
 
 ![Source: @willmes_paleomaps_2017](figs/paleomaps.png){fig-align="center" width="80%"}
 
@@ -81,15 +81,15 @@ format:
 
 ## 4DLandscapes: well defined Data model
 
-* For the SpaceTimeArc System and Application we aim to develop a common **stadardized data model** for spatio-temporal environmental and human (antropogenic infrastructure) data.
+* For the SpaceTimeArc System and Application we aim to develop a common **stadardized data model** for spatio-temporal environmental and human (sites, roads, infrastructure) data.
 
 * The data model consists of **thematic layers** (as are commonly used in the GIS field), which are compiled from *scientific sources* for the time periods defined in the temporal model.
 
-* **Data citation:** All data layers are linked to their sources. Corresponding bibliographies should be “exportable” for each spatiotemporal data/layer configuration.
+* **Data citation:** All data layers are linked to their published sources. Corresponding bibliographies are generated for each spatiotemporal data/layer configuration or 4DLandascape.
 
 ## Human Layer
 
-* Similar to the 4D Landscapes, we aim to develop a consistent data model for the Human Layer.
+* Similar to the 4DLandscapes, we aim to develop a consistent data model for the Human Layer.
 * The Human Layer datasets are compiled from peer reviewed publications.
 * The layers will be modelled in a well defined LOD data model. 
 * The compilation and creation of **Human Layer datasets are publications** of their own and will be peer reviewed and published.
@@ -235,7 +235,7 @@ Figure: Florian Thiery, CC BY 4.0
 ::: {#refs}
 :::
 
-## Figure credits {.smaller}
+### Figure credits {.smaller}
 
 * Semantic layer and archaeology figures: [GeoScience-FAIRification-LOD](https://github.com/Research-Squirrel-Engineers/GeoScience-FAIRification-LOD), figures CC BY 4.0, Florian Thiery
 * EPICA Dome C data: Spahni & Stocker 2006, doi:10.1594/PANGAEA.472484
